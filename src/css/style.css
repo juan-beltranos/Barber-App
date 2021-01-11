@@ -139,13 +139,31 @@ input {
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
-.alerta{
+.alerta {
   padding: 1rem;
   text-align: center;
   color: white;
   width: 100%;
-display: block;
+  display: block;
+  margin-bottom: 1rem;
 }
-.error{
-  background-color:rgb(194, 0, 0) ;
+.error {
+  background-color: rgb(194, 0, 0);
+}
+
+/*Resumen*/
+.contenido-resumen {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.contenido-resumen span {
+  font-weight: bold;
+}
+.contenido-resumen p {
+  margin-bottom: 1rem;
+}
+p.total {
+  font-size: 2rem;
+  color: rgb(19, 124, 223);
+  font-weight: bold;
 }
