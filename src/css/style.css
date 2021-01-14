@@ -26,26 +26,49 @@ button {
 }
 button:hover {
   cursor: pointer;
+  background-color: rgb(19, 124, 223);
+  color: white;
 }
 
 /*Pagina princiapal*/
-.contenedor-estetica {
-  height: 100vh;
-}
+
 .imagen {
   background-image: url(../img/1.jpg);
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+@media (min-width: 720px) {
+  .imagen {
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 }
 .app {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.781);
   margin: 0 auto;
-  padding-top: 1rem;
+  height: 100vh;
+}
+@media (min-width: 768px) {
+  .app {
+    background-color: rgba(0, 0, 0, 0.781);
+    margin: 0 auto;
+    width: 100vh;
+  }
+}
+.header {
+  padding: 1rem;
 }
 .tabs {
   text-align: center;
+  margin-top: 1rem;
   display: block;
+}
+.tabs button {
+  margin-top: 1rem;
 }
 @media (min-width: 720px) {
   .tabs {
@@ -57,6 +80,7 @@ button:hover {
 }
 .seccion {
   display: none;
+ 
 }
 .listado-servicios {
   padding: 1rem;
@@ -67,6 +91,8 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+    background-color: rgba(0, 0, 0, 0.781);
+    
   }
 }
 .servicio {
@@ -77,7 +103,7 @@ button:hover {
 @media (min-width: 720px) {
   .servicio {
     background-color: white;
-    padding: 0.5rem;
+    padding: 1rem;
     margin-bottom: 0;
     border-radius: 0.8rem;
   }
@@ -166,4 +192,19 @@ p.total {
   font-size: 2rem;
   color: rgb(19, 124, 223);
   font-weight: bold;
+}
+
+/*Login*/
+.btn-login {
+  background-color: rgb(19, 124, 223);
+  padding: 0.8rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.btn-login:hover {
+  background-color: rgb(30, 99, 163);
+  color: white;
 }

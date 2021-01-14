@@ -100,7 +100,7 @@ async function mostrarServicios() {
 
       // Generar el precio del servicio
       const precioServicio = document.createElement("P");
-      precioServicio.textContent = `$ ${precio}`;
+      precioServicio.textContent = `$ ${parseFloat(precio)}`;
       precioServicio.classList.add("precio-servicio");
 
       // Generar div contenedor de servicio
@@ -248,7 +248,7 @@ function mostrarResumen() {
 
   serviciosCita.appendChild(headingServicios);
 
-  let cantidad = 0;
+  let cantidad = 0.0;
 
   // Iterar sobre el arreglo de servicios
   servicios.forEach((servicio) => {
@@ -266,7 +266,7 @@ function mostrarResumen() {
     const totalServicio = precio.split("$");
     // console.log(parseInt( totalServicio[1].trim() ));
 
-    cantidad += parseInt(totalServicio[1].trim());
+    cantidad += parseFloat(totalServicio[1].trim());
 
     // Colocar texto y precio en el div
     contenedorServicio.appendChild(textoServicio);

@@ -1,0 +1,71 @@
+/*Globales*/
+h1,
+h2,
+h3 {
+  color: rgb(19, 124, 223);
+  font-weight: bold;
+  text-align: center;
+}
+p {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+.btn-login {
+  background-color: rgb(19, 124, 223);
+  padding: 0.8rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+}
+.btn-login:hover {
+  background-color: rgb(30, 99, 163);
+  color: white;
+}
+
+/*Pagina princiapal*/
+.imagen {
+  background-image: url(../img/1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.app {
+  background-color: rgba(0, 0, 0, 0.781);
+  margin: auto;
+  margin-top: 50%;
+  width: 70vh;
+}
+
+@media (min-width: 760px) {
+  .app {
+    background-color: rgba(0, 0, 0, 0.781);
+    margin: auto;
+    margin-top: 5rem;
+    padding-top: 1rem;
+    width: 100vh;
+  }
+}
+/*TABLE*/
+
+th,
+td {
+  color: white;
+}
+tr {
+  text-align: center;
+}
+.btn-eliminar {
+  background-color: rgb(194, 0, 0);
+  color: white;
+  font-weight: bold;
+  padding: 0.8rem;
+  border: none;
+}
+.btn-eliminar:hover {
+  background-color: rgb(141, 6, 6);
+}
